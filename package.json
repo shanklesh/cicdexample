@@ -1,0 +1,28 @@
+{
+  "name": "cicdexample",
+  "description": "test cicd using express app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "jest src/app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanklesh/cicdexample.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanklesh/cicdexample/issues"
+  },
+  "homepage": "https://github.com/shanklesh/cicdexample#readme"
+}
