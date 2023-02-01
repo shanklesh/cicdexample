@@ -44,9 +44,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello world
-        run: Helo
+        run: echo Hello
 
       - name: multiline step
         run: |
           pwd
           ls
+          scp -i ./shanklesh.pem ./shanklesh-scp.txt  ubuntu@ec2-43-207-55-237.ap-northeast-1.compute.amazonaws.com:~/
