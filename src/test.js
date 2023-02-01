@@ -11,4 +11,11 @@ describe("/test endppint", () => {
       message: "testMockdsdsxzxzxz",
     });
   });
+  it("Should return a response", async () => {
+    const response = await request.get("/test");
+    expect(response.status).toBe(200);
+    expect(JSON.parse(response.text)).toEqual({
+      message: "testMockdsdsxzxzxz",
+    });
+  });
 });
