@@ -45,4 +45,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Deploy
-        run: scp -i ${{secrets.SSH_PRIVATE_KEY}}" shanklesh.txt  ubuntu@ec2-43-207-55-237.ap-northeast-1.compute.amazonaws.com:~/
+        run: scp -i ${{secrets.SSH_PRIVATE_KEY}} ./shanklesh.txt  ubuntu@ec2-43-207-55-237.ap-northeast-1.compute.amazonaws.com:~/
