@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello world
-        run: echo ${{secerets.SSH_PRIVATE_KEY}}
+        run: Helo
 
       - name: multiline step
         run: |
