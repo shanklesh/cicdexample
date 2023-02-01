@@ -44,11 +44,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello world
-        run: echo Hello
+        run: echo "${{secerets.SSH_PRIVATE_KEY}}"
 
       - name: multiline step
         run: |
           pwd
           ls
-          echo "${{secerets.SSH_PRIVATE_KEY}}" | tr -d '\'> key.pem
-          scp -i key.pem ./shanklesh-scp.txt  ubuntu@ec2-43-207-55-237.ap-northeast-1.compute.amazonaws.com:~/
+          scp -i ${{secerets.SSH_PRIVATE_KEY}} ./shanklesh-scp.txt  ubuntu@ec2-43-207-55-237.ap-northeast-1.compute.amazonaws.com:~/
